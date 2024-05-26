@@ -49,5 +49,5 @@ TEST:
   RE_RANK: True
   WEIGHT: ""
 
-OUTPUT_DIR: "/media/dulith/bc5d61db-b54c-434d-b2d4-6a104514a052/dulith/Data/MSc/PANet/person_reid_multi_scale/output"
+OUTPUT_DIR: "/media/dulith/bc5d61db-b54c-434d-b2d4-6a104514a052/dulith/Data/MSc/efficient_attention_net/output"
 # /home/gtp_cgy/ivg/dataset/Occluded-DukeMTMC-Dataset/Occluded_Duke
