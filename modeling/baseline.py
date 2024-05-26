@@ -153,11 +153,18 @@ class Baseline(nn.Module):
 
 
         if self.level > 0:
-            self.att1 = SAMS(64,int(64/self.level),radix=self.level)
-            self.att2 = SAMS(256,int(256/self.level),radix=self.level)
-            self.att3 = SAMS(512,int(512/self.level),radix=self.level)
-            self.att4 = SAMS(1024,int(1024/self.level),radix=self.level)
-            self.att5 = SAMS(2048,int(2048/self.level),radix=self.level)
+            # self.att1 = SAMS(64,int(64/self.level),radix=self.level)
+            # self.att2 = SAMS(256,int(256/self.level),radix=self.level)
+            # self.att3 = SAMS(512,int(512/self.level),radix=self.level)
+            # self.att4 = SAMS(1024,int(1024/self.level),radix=self.level)
+            # self.att5 = SAMS(2048,int(2048/self.level),radix=self.level)
+            self.att1 = ECA(64)
+            self.att2 = ECA(256)
+            self.att3 = ECA(512)
+            self.att4 = ECA(1024)
+            self.att5 = ECA(2048)
+
+
             if self.level > 1: # second pyramid level
                 self.att_s1=ECA(64)
                 self.att_s2=ECA(256)
